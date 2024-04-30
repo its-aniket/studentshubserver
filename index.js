@@ -52,7 +52,7 @@ const upload  =multer();
 
 // Allow requests from a specific origin
 const corsOptions = {
-  origin:'https://students-hub.vercel.app', // Replace with your frontend origin
+  origin: 'https://students-hub.vercel.app', // Replace with your frontend origin
   optionsSuccessStatus: 200 // Some legacy browsers (e.g., IE11) may require a status code to be explicitly set
 };
 
