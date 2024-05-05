@@ -36,7 +36,7 @@ app.use(morgan("common"));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', 'https://students-hub.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', true);
@@ -52,7 +52,7 @@ const upload  =multer();
 
 // Allow requests from a specific origin
 const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your frontend origin
+  origin: 'https://students-hub.vercel.app', // Replace with your frontend origin
   optionsSuccessStatus: 200 // Some legacy browsers (e.g., IE11) may require a status code to be explicitly set
 };
 
